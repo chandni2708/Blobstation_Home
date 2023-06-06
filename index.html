@@ -15,21 +15,12 @@
         integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT"
         crossorigin="anonymous"></script>
     <style>
-        @media(max-width:1400px) {
-            #brand {
-                padding-right: 2rem;
-                display: inline;
-            }
-
-            #nav {
-                width: auto;
-            }
-        }
 
         @media(max-width:565px) {
             #brand {
-                padding-right: 2rem;
+                padding-right: 2rem !important;
             }
+
         }
 
         #cards {
@@ -62,23 +53,72 @@
                 text-align: justify;
             }
 
-            #img {
+            #image {
                 width: 250px;
                 height: 250px;
             }
 
+            #cont {
+                margin-left: 0rem !important;
+                margin-bottom: 2rem !important;
+                display: inline;
+            }
+
+            #cont1 {
+                margin-left: 0rem !important;
+                margin-bottom: 2rem !important;
+                display: inline;
+                text-align: justify;
+                letter-spacing: normal !important;
+            }
+
+            #cont2 {
+                margin-left: 1rem !important;
+                margin-bottom: 2rem !important;
+                display: inline;
+                text-align: left !important;
+                font-size: 1.5rem !important;
+            }
+
+            #cont2 h1 {
+                font-size: 32px !important;
+                line-height: 42px !important;
+            }
+
+            #cont3 h1 {
+                font-size: 2.7rem !important;
+            }
+
+            #contact {
+                padding: 1rem !important;
+            }
+
             #score {
-                padding-right: 3rem;
-                display: inline-block;
-                flex-direction: column;
                 padding-bottom: 4rem;
                 border: 0px white !important;
-
             }
 
             #marks {
-                padding-right: 0rem;
-                margin-left: 5rem;
+                padding-right: 0rem !important;
+                margin-left: 0rem !important;
+            }
+            #image1{
+                width: 320px !important;
+                height: 320px !important;
+                margin-left: -1rem !important;
+            }
+            #team h6{
+                font-size: 1.3rem !important;
+            }
+            #team p{
+                font-size: 1.5rem !important;
+            }
+            #team{
+                margin-left: -3rem !important;
+            }
+            #blobimg{
+                height: 110px !important;
+                width: 345px !important;
             }
         }
 
@@ -104,33 +144,74 @@
 
             }
         }
-         @media(max-width:540px) {
-           #stars{
+
+        @media(max-width:540px) {
+            #stars {
                 float: left;
                 text-align: justify;
-           }
-            #img {
-                width: 550px;
-                height: 500px;
             }
-            #headstars{
-                font-size: 2.5rem !important;
+
+            #starp {
+                font-size: 1rem !important;
+                padding: .5rem;
             }
-            #contentstars{
-                font-size: 2rem !important;
+
+            #clutch {
+                width: 30%;
+            }
+
+            #image {
+                height: 280px !important;
+                padding: 1rem !important;
+            }
+
+            #headstars {
+                font-size: 2.2rem !important;
+                padding: 1rem;
                 text-align: left;
             }
-            #column{
-        font-size: 1.5rem !important;
+
+            #contentstars {
+                font-size: 1.5rem !important;
+                padding: 1rem;
+                text-align: left justify;
             }
+
+            #column {
+                font-size: 1.3rem !important;
+                text-align: left;
+                padding: 0rem !important;
+                margin-left: -1rem !important;
+                margin-bottom: 1.5rem;
+            }
+
+            h1 {
+                font-size: 32px !important;
+                line-height: 42px !important;
+            }
+
+            p {
+                font-size: 1.3rem !important;
+            }
+            #contsub {
+                margin-left: 0rem !important;
+                margin-bottom: 2rem !important;
+                display: inline;
+                font-size: 2rem !important;
+            }
+
+            #contsub h4 {
+                font-size: 3rem !important;
+            }
+        
+
         }
     </style>
 </head>
 
 <body>
     <!-- Navbar -->
-    <nav
-        class="navbar navbar-expand-lg bg-body-tertiary navbar-light fixed-top  bg-white border border-right-0 border-info">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary navbar-light  border border-right-0 border-info fixed-top">
         <div class="container-fluid d-flex justify-content-between">
             <!-- Blobstation Logo -->
             <div class="col-sm-3 d-flex">
@@ -254,8 +335,8 @@
         <div class="row">
             <div class="col-sm pt-5 mt-3 ">
                 <div class="p-3"></div>
-                <h1 class="display-4 fw-bolder">Your Trusted Software</h1>
-                <h1 class="display-4 fw-bolder"> Development Partner</h1>
+                <h1 class="display-5 fw-bolder">Your Trusted Software</h1>
+                <h1 class="display-5 fw-bolder"> Development Partner</h1>
 
                 <p style="font-size: 25px;"> Building technology solutions for industry leaders and consistently
                     delivering unsurpassed results </p>
@@ -357,7 +438,7 @@
                     <div class="col-sm-8" id="stars">
                         <div style="height: 100px;"></div>
                         <div class="d-flex">
-                            <div class="my-2 fs-5">
+                            <div class="my-2 fs-5" id="starp">
                                 <p>Execellent</p>
                             </div>
                             <div class="p-2">
@@ -374,14 +455,15 @@
                                         loading="lazy" alt="" class="bg-success pb-1 px-1">
                                 </h5>
                             </div>
-                            <div class="p-2 px-3">
+                            <div class="p-2 px-3" id="clutch">
                                 <img class="w-75 h-50"
                                     src="https://uploads-ssl.webflow.com/645f30b9708893c889a4ab3e/645f354fa81fc93ebc523942_clutchlogo.svg"
                                     alt="">
                             </div>
                         </div>
                         <div class="my-2">
-                            <h1 class="h1" id="headstars"><span style="color: #2e8096;"> Best rated </span> software company</h1>
+                            <h1 class="h1" id="headstars"><span style="color: #2e8096;"> Best rated </span> software
+                                company</h1>
                         </div>
 
                         <div class="my-3 fs-5" id="contentstars">
@@ -392,161 +474,646 @@
                     </div>
                     <!-- Image div -->
                     <div class="col-sm-4" id="img">
-                        <img class="rounded w-auto p-2"
+                        <img class="rounded w-auto p-2" id="image"
                             src="https://images.pexels.com/photos/3184301/pexels-photo-3184301.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1260&amp;h=750&amp;dpr=2"
                             alt="" style="height: 350px;">
                     </div>
                 </div>
             </div>
-            <div class="container-fluid  mt-4 mb-4 bg-light">
-                <div class="container">
-                    <div class="row" id="info">
-                        <div class="col-sm-3 ms-4 mt-5 mb-3 me-1 pt-4 ps-5 pe-4 pb-4 rounded bg-white">
-                            <div class="my-3">
-                                <img src="https://uploads-ssl.webflow.com/645f30b9708893c889a4ab3e/645f30b9708893c889a4ac4a_customer-service-2-line.svg"
-                                    alt="">
-                            </div>
-                            <div>
-                                <h3> Staff Augmentation</h3>
-                            </div>
-                            <div>
-                                <p>We provides additional resources to supplement your existing team. It gives you
-                                    specific skills
-                                    or expertise required for scale.</p>
-                            </div>
-
-                        </div>
-
-                        <div class="col-sm-3 ms-4 mt-5 mb-3 me-1 pt-4 ps-5 pe-4 pb-4"
-                            style="background-color: white; border-radius: 10px;">
-                            <div class="my-3">
-                                <img src="https://uploads-ssl.webflow.com/645f30b9708893c889a4ab3e/645f30b9708893c889a4ac4a_customer-service-2-line.svg"
-                                    alt="">
-                            </div>
-                            <div>
-                                <h3> Dedicated Team </h3>
-                            </div>
-                            <div>
-                                <p>You get dedicated team of software professionals working exclusively on their
-                                    project. It allows
-                                    you to scale the team up or down as needed.</p>
-
-                            </div>
-                        </div>
-                        <div class="col-sm-5 row" style="margin-top: 60px; margin-left: 50px;">
-                            <div>
-                                <h1 style="line-height: 1.2;"> Tailored to your needs, Our <span
-                                        style="color: #2e8096;">
-                                        Flexible Engagement Model </span> ensuring seamless collaboration and successful
-                                    outcomes.</h1>
-                            </div>
-
-                            <div class="mt-3" style="font-size: 19px;">
-                                <p style="line-height: 1.5;">Choose the engagement model that aligns with your project
-                                    goals,
-                                    budget, and desired level of involvement. Take a decision on factors such as project
-                                    complexity,
-                                    timeline, scope, and desired level of control.</p>
-                            </div>
-                        </div>
+        </div>
+    </div>
+    <div class="container-fluid  mt-4 mb-4 bg-light">
+        <div class="container">
+            <div class="row" id="info">
+                <div class="col-sm-3 ms-4 mt-5 mb-3 me-1 pt-4 ps-5 pe-4 pb-4 rounded bg-white" id="cont">
+                    <div class="my-3">
+                        <img src="https://uploads-ssl.webflow.com/645f30b9708893c889a4ab3e/645f30b9708893c889a4ac4a_customer-service-2-line.svg"
+                            alt="">
+                    </div>
+                    <div>
+                        <h3> Staff Augmentation</h3>
+                    </div>
+                    <div>
+                        <p>We provides additional resources to supplement your existing team. It gives you
+                            specific skills
+                            or expertise required for scale.</p>
                     </div>
 
-                    <div class="row">
-                        <div class="col-sm-3 ms-4 mt-2 mb-3 me-1 pt-4 ps-5 pe-4 pb-4 rounded bg-white">
-                            <div class="my-3">
-                                <img src="https://uploads-ssl.webflow.com/645f30b9708893c889a4ab3e/645f30b9708893c889a4ac49_article-line.svg"
-                                    alt="">
-                            </div>
-                            <div>
-                                <h3> Fixed Cost</h3>
-                            </div>
-                            <div>
-                                <p style="line-height: 1.5;">Project scope, timeline, and cost are predetermined and It
-                                    works well
-                                    for well-defined projects with clear deliverables and specifications.</p>
-                            </div>
-                        </div>
+                </div>
 
-                        <div class="col-sm-3 ms-4 mt-2 mb-3 me-1 pt-4 ps-5 pe-4 pb-4 bg-white rounded">
-                            <div class="my-3">
-                                <img src="https://uploads-ssl.webflow.com/645f30b9708893c889a4ab3e/645f30b9708893c889a4ac51_slideshow-line.svg"
-                                    alt="">
-                            </div>
-                            <div>
-                                <h3> Time &amp; Material</h3>
-                            </div>
-                            <div>
-                                <p style="line-height: 1.5;">Pay for time and resources spent on the project. It offers
-                                    flexibility
-                                    and is suitable for projects with evolving requirements.</p>
+                <div class="col-sm-3 ms-4 mt-5 mb-3 me-1 pt-4 ps-5 pe-4 pb-4 bg-white rounded" id="cont">
+                    <div class="my-3">
+                        <img src="https://uploads-ssl.webflow.com/645f30b9708893c889a4ab3e/645f30b9708893c889a4ac4a_customer-service-2-line.svg"
+                            alt="">
+                    </div>
+                    <div>
+                        <h3> Dedicated Team </h3>
+                    </div>
+                    <div>
+                        <p>You get dedicated team of software professionals working exclusively on their
+                            project. It allows
+                            you to scale the team up or down as needed.</p>
 
-                            </div>
-                        </div>
-                        <div class="col-sm-5 row mt-3" style=" margin-left: 50px;">
-                            <a href="#" style="text-decoration: none; color: black;"> Read more <img
-                                    src="https://uploads-ssl.webflow.com/645f30b9708893c889a4ab3e/645f30b9708893c889a4abef_arrow%20black.svg"
-                                    alt=""></a>
-                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-5 row" style="margin-top: 60px; margin-left: 50px;" id="cont1">
+                    <div>
+                        <h1 style="line-height: 1.2;"> Tailored to your needs, Our <span style="color: #2e8096;">
+                                Flexible Engagement Model </span> ensuring seamless collaboration and successful
+                            outcomes.</h1>
                     </div>
 
+                    <div class="mt-3" style="font-size: 19px;">
+                        <p style="line-height: 1.5;">Choose the engagement model that aligns with your project
+                            goals,
+                            budget, and desired level of involvement. Take a decision on factors such as project
+                            complexity,
+                            timeline, scope, and desired level of control.</p>
+                    </div>
                 </div>
             </div>
-            <div class="container mb-4">
 
-                <div class="container col-sm-10 p-5 text-center">
-
-                    <h2 class="h1" id="blobtext"> Blobstation brings together some of the <span
-                            style="color: #2e8096;">smartest</span> personal and professional minds <span
-                            style="color: #2e8096;">in
-                            the world</span> and makes them available to you.</h2>
+            <div class="row">
+                <div class="col-sm-3 ms-4 mt-2 mb-3 me-1 pt-4 ps-5 pe-4 pb-4 rounded bg-white" id="cont">
+                    <div class="my-3">
+                        <img src="https://uploads-ssl.webflow.com/645f30b9708893c889a4ab3e/645f30b9708893c889a4ac49_article-line.svg"
+                            alt="">
+                    </div>
+                    <div>
+                        <h3> Fixed Cost</h3>
+                    </div>
+                    <div>
+                        <p style="line-height: 1.5;">Project scope, timeline, and cost are predetermined and It
+                            works well
+                            for well-defined projects with clear deliverables and specifications.</p>
+                    </div>
                 </div>
-                <div class="container col-sm-12 p-5">
-                    <div class="container row " id="marks">
-                        <div class="col-sm-3 " style="border-right: 1px solid ;" id="score">
-                            <div class="text-center">
-                                <h1 style="color: #2e8096;">98</h1>
-                            </div>
-                            <div class="text-center">
-                                <h5>NPS Score</h5>
-                            </div>
-                        </div>
 
-                        <div class="col-sm-3 " style="border-right: 1px solid" id="score">
-                            <div class="text-center">
-                                <h1 style="color: #2e8096;">30+</h1>
-                            </div>
-
-                            <div class="text-center">
-                                <h5>Satisfied customers</h5>
-                            </div>
-                        </div>
-
-                        <div class="col-sm-3 " style="border-right: 1px solid" id="score">
-                            <div class="text-center">
-                                <h1 style="color: #2e8096;">15M+</h1>
-                            </div>
-
-                            <div class="text-center">
-                                <h5>Lines of Code</h5>
-                            </div>
-                        </div>
-
-                        <div class="col-sm-3" id="score">
-                            <div class="text-center">
-                                <h1 style="color: #2e8096;">20K+</h1>
-                            </div>
-
-                            <div class="text-center">
-                                <h5>Cups of Coffee</h5>
-                            </div>
-                        </div>
+                <div class="col-sm-3 ms-4 mt-2 mb-3 me-1 pt-4 ps-5 pe-4 pb-4 bg-white rounded" id="cont">
+                    <div class="my-3">
+                        <img src="https://uploads-ssl.webflow.com/645f30b9708893c889a4ab3e/645f30b9708893c889a4ac51_slideshow-line.svg"
+                            alt="">
+                    </div>
+                    <div>
+                        <h3> Time &amp; Material</h3>
+                    </div>
+                    <div>
+                        <p style="line-height: 1.5;">Pay for time and resources spent on the project. It offers
+                            flexibility
+                            and is suitable for projects with evolving requirements.</p>
 
                     </div>
+                </div>
+                <div class="col-sm-5 row mt-3" style=" margin-left: 50px;">
+                    <a href="#" style="text-decoration: none; color: black;"> Read more <img
+                            src="https://uploads-ssl.webflow.com/645f30b9708893c889a4ab3e/645f30b9708893c889a4abef_arrow%20black.svg"
+                            alt=""></a>
+                </div>
+            </div>
 
+        </div>
+    </div>
+    <div class="container mb-4">
+
+        <div class="container col-sm-10 p-5 text-center">
+
+            <h2 class="h1" id="blobtext"> Blobstation brings together some of the <span
+                    style="color: #2e8096;">smartest</span> personal and professional minds <span
+                    style="color: #2e8096;">in
+                    the world</span> and makes them available to you.</h2>
+        </div>
+        <div class="container col-sm-12 p-5">
+            <div class="container row " id="marks">
+                <div class="col-sm-3 " style="border-right: 1px solid ;" id="score">
+                    <div class="text-center">
+                        <h1 style="color: #2e8096;">98</h1>
+                    </div>
+                    <div class="text-center">
+                        <h5>NPS Score</h5>
+                    </div>
+                </div>
+
+                <div class="col-sm-3 " style="border-right: 1px solid" id="score">
+                    <div class="text-center">
+                        <h1 style="color: #2e8096;">30+</h1>
+                    </div>
+
+                    <div class="text-center">
+                        <h5>Satisfied customers</h5>
+                    </div>
+                </div>
+
+                <div class="col-sm-3 " style="border-right: 1px solid" id="score">
+                    <div class="text-center">
+                        <h1 style="color: #2e8096;">15M+</h1>
+                    </div>
+
+                    <div class="text-center">
+                        <h5>Lines of Code</h5>
+                    </div>
+                </div>
+
+                <div class="col-sm-3" id="score">
+                    <div class="text-center">
+                        <h1 style="color: #2e8096;">20K+</h1>
+                    </div>
+
+                    <div class="text-center">
+                        <h5>Cups of Coffee</h5>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+    <div class="container mt-5 p-3 mb-5">
+        <div class="row">
+
+            <!-- Image div -->
+            <div class="col-sm-6">
+                <img class="rounded w-auto" id="image"
+                    src="https://uploads-ssl.webflow.com/645f30b9708893c889a4ab3e/645f30b9708893c889a4abe1_Software%20House%202.webp"
+                    alt="" style=" height: 420px;">
+            </div>
+
+            <div class="col-sm-6" id="cont2">
+                <div style="height: 100px;"></div>
+                <div class="ps-4">
+                    <h1><strong> With team of dedicated professionals you will be in good hands.</strong></h1>
+                </div>
+
+                <div class="mt-2 pt-3 ps-4">
+                    <div>
+                        <p style="line-height: 2;">We develop software solutions by working closely with clients to
+                            understand business needs. Innovative solutions built with client's vision and our
+                            technical
+                            expertise empower the businesses in modern digital world.</p>
+                    </div>
                 </div>
 
             </div>
         </div>
+    </div>
+    <div class="container mt-5 p-4 mb-5">
+        <div class="row">
+
+            <div class="col-sm-6" id="cont2">
+                <div style="height: 100px;">
+
+                </div>
+
+                <div class="">
+
+                    <div class="pe-4">
+                        <h1><strong> Our solutions are tailored for you so you can grow fast.</strong></h1>
+                    </div>
+
+                    <div class="mt-2 pt-3 pe-4">
+                        <div>
+                            <p style="line-height: 2;">At Blobstation, we understand that every business has unique
+                                needs
+                                and goals. That's why we offer tailored solutions that are specifically designed to meet
+                                the
+                                individual needs of each client, enabling them to grow and succeed in today's digital
+                                landscape.
+
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Image div -->
+            <div class="col-sm-6">
+                <img class="rounded w-auto" id="image"
+                    src="https://uploads-ssl.webflow.com/645f30b9708893c889a4ab3e/645f30b9708893c889a4abe0_Software%20House%203.webp"
+                    alt="" style=" height: 420px;">
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid p-4 mt-4 mb-4 bg-light ">
+
+        <div class="container">
+
+            <div class="row">
+
+                <div class="col-sm-5 row" style="margin-top: 60px; margin-right: 50px;">
+                    <div>
+                        <h1 style="line-height: 1.5; color: black;"><strong> Read why we are a <span
+                                    style="color: #2e8096;">market leader</span> in the industry </strong></h1>
+                    </div>
+
+                    <div class="" style="font-size: 18px;">
+                        <p style="line-height: 1.5;">Code Masters has earned a reputation as the top rated agency in
+                            Europe
+                            for its exceptional services in software development, business consulting, and design.</p>
+                    </div>
+
+                    <div>
+                        <a href="#" style="text-decoration: none; color: black;"> Read more <img
+                                src="https://uploads-ssl.webflow.com/645f30b9708893c889a4ab3e/645f30b9708893c889a4abef_arrow%20black.svg"
+                                alt=""> </a>
+                    </div>
+                </div>
+
+                <div class="col-sm-3 ms-4 mt-5 mb-3 me-1 pt-4 ps-5 pe-4 pb-4 bg-dark text-white rounded" id="cont">
+                    <div class="my-3">
+                        <img src="https://uploads-ssl.webflow.com/645f30b9708893c889a4ab3e/645f30b9708893c889a4abe2_award-line.svg"
+                            alt="">
+                    </div>
+                    <div>
+                        <h3><strong> One of a kind </strong></h3>
+                    </div>
+                    <div>
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Curabitur blandit mollis lacus.
+                            Donec
+                            orci lectus, aliquam ut.</p>
+                    </div>
+                    <div style="height: 50px;">
+
+                    </div>
+                </div>
+
+                <div class="col-sm-3 ms-4 mt-5 mb-3 me-1 pt-4 ps-5 pe-4 pb-4 rounded bg-white" id="cont">
+                    <div class="my-3">
+                        <img src="https://uploads-ssl.webflow.com/645f30b9708893c889a4ab3e/645f30b9708893c889a4ac4a_customer-service-2-line.svg"
+                            alt="">
+                    </div>
+                    <div>
+                        <h3><strong> Great support </strong></h3>
+                    </div>
+                    <div>
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Curabitur blandit mollis lacus.
+                            Donec
+                            orci lectus, aliquam ut.</p>
+
+                    </div>
+                    <div style="height: 50px;">
+
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+
+                <div class="col-sm-5 row" style="margin-top: 60px; margin-left: 50px;">
+
+                </div>
+
+                <div class="col-sm-3 ms-4 mt-2 mb-3 me-1 pt-4 ps-5 pe-4 pb-4 rounded bg-white" id="cont">
+
+                    <div class="my-3">
+                        <img src="https://uploads-ssl.webflow.com/645f30b9708893c889a4ab3e/645f30b9708893c889a4ac49_article-line.svg"
+                            alt="">
+                    </div>
+                    <div>
+                        <h3><strong> We document </strong></h3>
+                    </div>
+                    <div>
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Curabitur blandit mollis lacus.
+                            Donec
+                            orci lectus, aliquam ut.</p>
+                    </div>
+                    <div style="height: 50px;">
+
+                    </div>
+                </div>
+
+                <div class="col-sm-3 ms-4 mt-2 mb-3 me-1 pt-4 ps-5 pe-4 pb-4 rounded bg-white" id="cont">
+                    <div class="my-3">
+                        <img src="https://uploads-ssl.webflow.com/645f30b9708893c889a4ab3e/645f30b9708893c889a4ac51_slideshow-line.svg"
+                            alt="">
+                    </div>
+                    <div>
+                        <h3><strong> Appreciated </strong></h3>
+                    </div>
+                    <div>
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Curabitur blandit mollis lacus.
+                            Donec
+                            orci lectus, aliquam ut.</p>
+
+                    </div>
+                    <div style="height: 50px;">
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="container mt-5 p-4">
+
+        <div class="container pt-4 text-center" id="cont3">
+            <h1><strong> Have a look at our <span style="color: #2e8096;">success stories</span> </strong></h1>
+            <div class="container">
+                <div class="row ">
+                    <div class="col-sm-2"></div>
+                    <div class="col-sm-8">
+                        <p style="line-height: 1.5; font-size: 20px;">Developing a successful digital product is a
+                            complex
+                            process that requires choosing the right partner, applying innovative solutions, and
+                            following
+                            reliable processes.</p>
+                    </div>
+                    <div class="col-sm-2"></div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div style="height: 150px;">
+
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6" style="padding-left: 120px;" id="contact">
+                <h6 style="color: #2e8096;">Let's talk</h6>
+                <h4 class="pt-4"><strong> Consultation request </strong></h4>
+                <p class="pt-2">Tell us your Queries, We are Listening !</p>
+
+                <form class="my-4" style="opacity: 0.6;">
+                    <div class="row ">
+                        <div class="col">
+                            <input type="text" class="form-control form-control-lg bg-light py-3 " placeholder="Name"
+                                name="Name">
+                        </div>
+                        <div class="col">
+                            <input type="text" class="form-control form-control-lg bg-light py-3" placeholder="Surname"
+                                name="Surname">
+                        </div>
+                    </div>
+
+                    <div class="my-4">
+                        <input type="email" class="form-control form-control-lg bg-light py-3" placeholder="Enter email"
+                            name="email">
+                    </div>
+
+                    <div class="my-4">
+                        <input type="tel" class="form-control form-control-lg bg-light py-3" placeholder="Phone Number"
+                            name="phone">
+                    </div>
+
+                    <div class="my-4">
+                        <textarea class="form-control bg-light" id="comment" name="text" placeholder="Your message..."
+                            cols="60" rows="5"></textarea>
+                    </div>
+                </form>
+                <form class="my-4">
+                    <div class="form-check my-4">
+                        <input class="form-check-input" type="checkbox" id="check1" name="option1" value="something"
+                            style="border: 3px solid;">
+                        <label class="form-check-label">By clicking on “Send message” you agree with our Terms and
+                            Conditions, meaning you agree to get back in touch with you based on provided infomations
+                            based filling your forms.</label>
+                    </div>
+
+                    <div class="d-grid">
+                        <button style="background-color: #2e8096; color: white;" type="button"
+                            class="btn btn-block p-3">Contact us</button>
+                    </div>
+                </form>
+            </div>
+
+            <div class="col-sm-5 mb-4" style="padding-left: 80px;">
+                <img class="rounded w-auto" id="image1"
+                    src="https://uploads-ssl.webflow.com/645f30b9708893c889a4ab3e/645f30b9708893c889a4abc5_Best%20Rated.webp"
+                    alt="" style=" height: 535px;">
+
+                <div class="bg-light mt-4 p-4 rounded" id="team">
+                    <h6>Meet <span style="color:#2e8096;">product team</span></h6>
+                    <div class="mt-4">
+                        <p><i><q>As your dedicated project manager I am ready to guide your through development
+                                    process.</q></i></p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+    <div class="container-fluid" style="background-color: black;">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-sm-4 pt-5">
+                    <div style="padding-top: 80px; color: white;">
+                        <a href="#"><img
+                                src="https://uploads-ssl.webflow.com/645f30b9708893c889a4ab3e/645f41cda81fc93ebc598267_Blobstation_Logo_White.svg"
+                                alt="" style="width: 220px;" id="blobimg"></a>
+                        <p class="mt-3" style="line-height: 1.5;">Building software solutions for industry leaders and
+                            consistently delivering unsurpassed results.</p>
+                    </div>
+
+                    <div class="mt-4 d-flex justify-content-between">
+                        <a href="#"><img
+                                src="https://uploads-ssl.webflow.com/645f30b9708893c889a4ab3e/645f30b9708893c889a4abeb_Messenger.svg"
+                                alt=""></a>
+                        <a href="#"><img
+                                src="https://uploads-ssl.webflow.com/645f30b9708893c889a4ab3e/645f30b9708893c889a4abe9_FB.svg"
+                                alt=""></a>
+                        <a href="#"><img
+                                src="https://uploads-ssl.webflow.com/645f30b9708893c889a4ab3e/645f30b9708893c889a4abea_Git.svg"
+                                alt=""></a>
+                        <a href="#"><img
+                                src="https://uploads-ssl.webflow.com/645f30b9708893c889a4ab3e/645f30b9708893c889a4abec_Whats.svg"
+                                alt=""></a>
+                        <a href="#"><img
+                                src="https://uploads-ssl.webflow.com/645f30b9708893c889a4ab3e/645f30b9708893c889a4abed_Spotify.svg"
+                                alt=""></a>
+                        <a href="#"><img
+                                src="https://uploads-ssl.webflow.com/645f30b9708893c889a4ab3e/645f30b9708893c889a4abe8_Insta.svg"
+                                alt=""></a>
+                        <a href="#"> </a>
+
+                    </div>
+
+                    <div class="pb-5">
+                        <div style="padding-bottom: 80px;">
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="col-sm-4 pt-5">
+
+                </div>
+
+                <div class="col-sm-4 pt-5">
+                    <div style="padding-top: 80px; color: white;">
+                        <h4><strong> Tech Updates </strong></h4>
+                        <p>Only good news, no spam - promise.</p>
+                    </div>
+
+                    <form class="my-2">
+                        <div class="row">
+                            <div class="col">
+                                <input type="email" class="form-control form-control-lg py-3 " placeholder="Your email"
+                                    name="mail" style="width: 280px; background-color: white;">
+                            </div>
+                            <div class="col">
+                                <input type="button" class="form-control form-control-lg py-3" value="Send"
+                                    style="background-color: #00d563; border-color: #00d563; color: white; width: 100px;">
+                            </div>
+                        </div>
+                    </form>
+
+                    <div class="pb-5">
+                        <div style="padding-bottom: 80px;">
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+
+            </div>
+        </div>
+
+    </div>
+    <div class="container-fluid pt-5 d-flex justify-content-between"
+        style="color: white; background-color: #141515;">
+
+        <div class="container" style="padding-top: 80px;">
+            <div class="row">
+                <div class="col-sm-2">
+
+                    <h5>Main pages</h5>
+                    <ul style="line-height: 3; vertical-align: auto; padding-left: 0;">
+                        <li style="list-style-type: none;"><a href="#"
+                                style="text-decoration: none; color: white; list-style-type: none;">Home A</a></li>
+                        <li style="list-style-type: none;"><a href="#"
+                                style="text-decoration: none; color: white; list-style-type: none;">Home B</a></li>
+                        <li style="list-style-type: none;"><a href="#"
+                                style="text-decoration: none; color: white; list-style-type: none;">Home C</a></li>
+                        <li style="list-style-type: none;"><a href="#"
+                                style="text-decoration: none; color: white; list-style-type: none;">About A</a></li>
+                        <li style="list-style-type: none;"><a href="#"
+                                style="text-decoration: none; color: white; list-style-type: none;">About B</a></li>
+                        <li style="list-style-type: none;"><a href="#"
+                                style="text-decoration: none; color: white; list-style-type: none;">About C</a></li>
+                    </ul>
+
+                </div>
+
+                <div class="col-sm-2">
+
+                    <br>
+                    <ul style="line-height: 3; vertical-align: auto; padding-left: 0;">
+                        <li style="list-style-type: none;"><a href="#"
+                                style="text-decoration: none; color: white; list-style-type: none;">Industry A</a></li>
+                        <li style="list-style-type: none;"><a href="#"
+                                style="text-decoration: none; color: white; list-style-type: none;">Industry B</a></li>
+                        <li style="list-style-type: none;"><a href="#"
+                                style="text-decoration: none; color: white; list-style-type: none;">Industry C</a></li>
+                        <li style="list-style-type: none;"><a href="#"
+                                style="text-decoration: none; color: white; list-style-type: none;">Pricing</a></li>
+                        <li style="list-style-type: none;"><a href="#"
+                                style="text-decoration: none; color: white; list-style-type: none;">product</a></li>
+                    </ul>
+
+
+                </div>
+
+                <div class="col-sm-2">
+
+                    <br>
+                    <ul style="line-height: 3; vertical-align: auto; padding-left: 0;">
+                        <li style="list-style-type: none;"><a href="#"
+                                style="text-decoration: none; color: white; list-style-type: none;">Careers</a></li>
+                        <li style="list-style-type: none;"><a href="#"
+                                style="text-decoration: none; color: white; list-style-type: none;">Careers Single</a>
+                        </li>
+                        <li style="list-style-type: none;"><a href="#"
+                                style="text-decoration: none; color: white; list-style-type: none;">Blog</a></li>
+                        <li style="list-style-type: none;"><a href="#"
+                                style="text-decoration: none; color: white; list-style-type: none;">Blog single</a></li>
+                        <li style="list-style-type: none;"><a href="#"
+                                style="text-decoration: none; color: white; list-style-type: none;">Legal</a></li>
+                    </ul>
+
+
+                </div>
+
+                <div class="col-sm-2">
+
+                    <h5>Other pages</h5>
+                    <ul style="line-height: 3; vertical-align: auto; padding-left: 0;">
+                        <li style="list-style-type: none;"><a href="#"
+                                style="text-decoration: none; color: white; list-style-type: none;">Contact A</a></li>
+                        <li style="list-style-type: none;"><a href="#"
+                                style="text-decoration: none; color: white; list-style-type: none;">Contact B</a></li>
+                        <li style="list-style-type: none;"><a href="#"
+                                style="text-decoration: none; color: white; list-style-type: none;">Contact C</a></li>
+                        <li style="list-style-type: none;"><a href="#"
+                                style="text-decoration: none; color: white; list-style-type: none;">Style guide</a></li>
+                        <li style="list-style-type: none;"><a href="#"
+                                style="text-decoration: none; color: white; list-style-type: none;">Licenses</a></li>
+                        <li style="list-style-type: none;"><a href="#"
+                                style="text-decoration: none; color: white; list-style-type: none;">Changelog</a></li>
+                        <li style="list-style-type: none;"><a href="#"
+                                style="text-decoration: none; color: white; list-style-type: none;">Start here</a></li>
+                    </ul>
+
+                </div>
+
+                <div class="col-sm-1">
+
+                </div>
+
+                <div class="col-sm-3">
+                    <div>
+                        <h4>Call us</h4>
+                    </div>
+                    <div class="mt-4">
+                        <p>Feel free to call us in working hours Mon - Frid (8:00 - 16:00 EST). Our team will be happy
+                            to
+                            help answer your questions</p>
+                    </div>
+                    <div>
+                        <a href="#" style="text-decoration: none; color: white;">
+                            <p>+1 800 000 000 <img
+                                    src="https://uploads-ssl.webflow.com/645f30b9708893c889a4ab3e/645f30b9708893c889a4abf0_arrow%20white.svg"
+                                    alt=""></p>
+                        </a>
+                    </div>
+
+                    <div class="mt-5">
+                        <h4>Mail us</h4>
+                    </div>
+                    <div class="mt-4">
+                        <p>No need to filling forms. Jump on your email and mail us with whatever you need. We are here
+                            to
+                            help you.</p>
+                    </div>
+                    <div>
+                        <a href="#" style="text-decoration: none; color: white;">
+                            <p>templates@wavesdesign.io<img
+                                    src="https://uploads-ssl.webflow.com/645f30b9708893c889a4ab3e/645f30b9708893c889a4abf0_arrow%20white.svg"
+                                    alt=""></p>
+                        </a>
+                    </div>
+
+                    <div class="mb-5"></div>
+
+                </div>
+
+                <div class="mt-5 mb-4">
+                    <p><small> Template designed with love by <a href="#" style="color: white;"> Wavesdesign </a>,
+                            powered
+                            by <a href="" style="color: white;"> Webflow. </a> </small></p>
+                </div>
+
+            </div>
+
+        </div>
+
     </div>
 </body>
 
